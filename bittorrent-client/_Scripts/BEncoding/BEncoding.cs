@@ -87,29 +87,5 @@ namespace Bittorrent
             }
             return ret;
         }
-
-        //public static byte[] BuildDataByteArray(byte[] prefix, byte[] data, byte[]? suffix = null)
-        //{
-        //    try 
-        //    {
-        //        //Prefix separator is always the same, so we don't need to pass that in.
-        //        //Suffix isn't used for strings
-        //        byte[][] paramsToPass = suffix != null ? [prefix, data, suffix] : [prefix, data];
-        //        return ByteArrayBuilder(paramsToPass);
-        //    }
-        //    catch (Exception e) 
-        //    {
-        //        throw e;
-        //    }
-        //}
-
-        //public static byte[] BuildDataByteArrayForStringData(string str)
-        //{
-        //    //Strings should be preceded by a byte-count of the string length
-        //    byte[] stringLength = [Convert.ToByte(GetStringByteLength(str))];
-        //    byte[] bytes = Encoding.UTF8.GetBytes(str);
-
-        //    return BuildDataByteArray(stringLength, bytes);
-        //}
     }
 }
